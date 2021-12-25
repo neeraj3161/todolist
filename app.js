@@ -5,7 +5,7 @@ const bp = require('body-parser');
 app.use(bp.urlencoded({extended:true}));
 const port=3000;
 const mongoose=require('mongoose');
-mongoose.connect('mongodb+srv://admin-neeraj:Apple'+'%40'+'744755@cluster0.0g10x.mongodb.net/todolistDB',{useNewUrlParser:true});
+mongoose.connect('mongodb+srv://<username>:<password>@cluster0.0g10x.mongodb.net/todolistDB',{useNewUrlParser:true});
 // schema
 const itemsSchema=new mongoose.Schema({
     name:{
